@@ -78,14 +78,21 @@
     <!--Javascript -->
   <script>
 
+//asking user name
 
 var name = prompt("May I please have your name?","Goro Akechi");
 
-alert("Welcome," + name +"to the other realm!")
+//showing user welcome message
+
+alert("Welcome" + name + "to the other realm!.")
 
 var today = new Date();
 
+//creating array to for month
+
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+//getting day
 
 var day = today.getDate();
 
@@ -103,22 +110,20 @@ var greetMessage;
 
 if(hours <12){
 greetMessage = "Good Morning";
+
 }
 
 else if(hrs >= 12 && hrs <=17){
 greetMessage = "Good Afternoon";
+
 }
 
 else if(hrs >= 17 && hrs <=24){
 greetMessage = "Good Evening";
+
 }
 
 document.getElementById("greetM").innerHTML = "Hey" + name +","+greetMessage
-
-
-const d = new Date();
-d.setFullYear(2021, 6, 17);
-document.getElementById("demo").innerHTML = d;
 
 </script>
 </body>
